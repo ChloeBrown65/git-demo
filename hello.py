@@ -1,6 +1,16 @@
+import sys 
 
 def hello():
-	print("hello world")
+	if sys.argv[1] == "Jupiter":
+		hellojupiter()
+	else:
+		helloworld()
 
-if name == 'main':
+def hellojupiter():
+	print("hello jupiter")
+
+def helloworld():
+	print ("hello world")
+
+if __name__ == '__main__':
 	hello()
